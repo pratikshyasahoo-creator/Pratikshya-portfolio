@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; scroll-snap-type: y proximity; }
+body { @apply bg-slate-50 text-slate-800 font-sans dark:bg-slate-950 dark:text-slate-200; }
+.scroll-snap-start { scroll-snap-align: start; }
+.card { @apply rounded-2xl border border-indigo-500/20 bg-white/70 p-6 shadow-sm backdrop-blur dark:bg-slate-900/60; }
+.btn { @apply inline-block rounded-full bg-gradient-to-r from-indigo-500 via-violet-500 to-indigo-500 bg-[length:200%_auto] px-6 py-2.5 text-sm font-medium text-white transition hover:animate-shift hover:shadow-lg hover:shadow-indigo-500/40 active:scale-95; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; scroll-snap-type: none; } *, *::before, *::after { animation: none !important; transition: none !important; } }
